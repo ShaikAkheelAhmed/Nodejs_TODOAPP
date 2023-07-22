@@ -5,5 +5,5 @@ export const connectDB=() =>mongoose
     dbName:"NodeApi",
 })
 
-.then(()=>(console.log("Database connected")))
-.catch(()=>(console.log(e)))
+.then((c)=>(console.log(`Database connected with ${c.connection.host}`)))
+.catch((e)=>(console.log(e)))
